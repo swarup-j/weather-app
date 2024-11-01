@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #e2e8f0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* By adding this github pages is working properly in responsive view */
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.all-info{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card{
+    border:  1px solid #f1f5f9; 
+    width: 750px;
+    background: #f8fafc;
+    margin: 60px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 0 0;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.search input{
+    width: 85%;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    padding-left: 
+    20px;
+    border:  2px solid #f1f5f9;
+}
+
+.search input::placeholder{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.search-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border:  2px solid #f1f5f9;
+    cursor: pointer;
+}
+
+.search-button img{
+    height: 15px;
+}
+
+@media screen and (max-width: 968px){
+    .search input{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 912px){
+    .all-info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .card{
+        width: 630px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .card{
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .card{
+        width: 490px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .card{
+        width: 430px;
+    }
+    .search input{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .card{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .card{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 395px){
+    .card{
+        width: 350px;
+    }
+    .search input{
+        width: 70%;
+    }
+}
